@@ -36,6 +36,7 @@
     <h1>Interrogazioni al db</h1>
 
     <br><br>
+    <!-- Campo form -->
     <form>
         <select name="value">
             <?php
@@ -50,6 +51,7 @@
         </select>
         <input type="submit" value="FILTER">
     </form>
+
     <br><br>
 
     <?php 
@@ -64,7 +66,7 @@
 
                 //preparo la mia interrogazione al Db
                 $sql = "SELECT name 'nome_corso' FROM `courses` WHERE period ='I semestre' and year = 1;";
-
+                
                 break;
             case 1:
                 echo "<h2>Da quanti dipartimenti è composta l'università?</h2>";
